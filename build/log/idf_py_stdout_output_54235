@@ -1,0 +1,173 @@
+Command: ninja flash
+[1/20] Linking C static library esp-idf/bmp280/libbmp280.a
+[2/20] Linking C static library esp-idf/wifi_manager/libwifi_manager.a
+[3/20] Linking C static library esp-idf/spiffs/libspiffs.a
+[4/20] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[5/20] Building C object esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj
+FAILED: esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj 
+/home/atli/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/atli/Documents/Esp32/Esp32_main/build/config -I/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/include -I/home/atli/esp/esp-idf/components/newlib/platform_include -I/home/atli/esp/esp-idf/components/freertos/config/include -I/home/atli/esp/esp-idf/components/freertos/config/include/freertos -I/home/atli/esp/esp-idf/components/freertos/config/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/atli/esp/esp-idf/components/freertos/esp_additions/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/atli/esp/esp-idf/components/esp_hw_support/dma/include -I/home/atli/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/atli/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/atli/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/atli/esp/esp-idf/components/heap/include -I/home/atli/esp/esp-idf/components/heap/tlsf -I/home/atli/esp/esp-idf/components/log/include -I/home/atli/esp/esp-idf/components/soc/include -I/home/atli/esp/esp-idf/components/soc/esp32 -I/home/atli/esp/esp-idf/components/soc/esp32/include -I/home/atli/esp/esp-idf/components/soc/esp32/register -I/home/atli/esp/esp-idf/components/hal/platform_port/include -I/home/atli/esp/esp-idf/components/hal/esp32/include -I/home/atli/esp/esp-idf/components/hal/include -I/home/atli/esp/esp-idf/components/esp_rom/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/atli/esp/esp-idf/components/esp_rom/esp32 -I/home/atli/esp/esp-idf/components/esp_common/include -I/home/atli/esp/esp-idf/components/esp_system/include -I/home/atli/esp/esp-idf/components/esp_system/port/soc -I/home/atli/esp/esp-idf/components/esp_system/port/include/private -I/home/atli/esp/esp-idf/components/xtensa/esp32/include -I/home/atli/esp/esp-idf/components/xtensa/include -I/home/atli/esp/esp-idf/components/xtensa/deprecated_include -I/home/atli/esp/esp-idf/components/lwip/include -I/home/atli/esp/esp-idf/components/lwip/include/apps -I/home/atli/esp/esp-idf/components/lwip/include/apps/sntp -I/home/atli/esp/esp-idf/components/lwip/lwip/src/include -I/home/atli/esp/esp-idf/components/lwip/port/include -I/home/atli/esp/esp-idf/components/lwip/port/freertos/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/atli/esp/esp-idf/components/driver/deprecated -I/home/atli/esp/esp-idf/components/driver/i2c/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/include -I/home/atli/esp/esp-idf/components/driver/twai/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/atli/esp/esp-idf/components/esp_pm/include -I/home/atli/esp/esp-idf/components/esp_ringbuf/include -I/home/atli/esp/esp-idf/components/esp_driver_gpio/include -I/home/atli/esp/esp-idf/components/esp_driver_pcnt/include -I/home/atli/esp/esp-idf/components/esp_driver_gptimer/include -I/home/atli/esp/esp-idf/components/esp_driver_spi/include -I/home/atli/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/atli/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/atli/esp/esp-idf/components/esp_driver_i2s/include -I/home/atli/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/atli/esp/esp-idf/components/sdmmc/include -I/home/atli/esp/esp-idf/components/esp_driver_sdspi/include -I/home/atli/esp/esp-idf/components/esp_driver_sdio/include -I/home/atli/esp/esp-idf/components/esp_driver_dac/include -I/home/atli/esp/esp-idf/components/esp_driver_rmt/include -I/home/atli/esp/esp-idf/components/esp_driver_tsens/include -I/home/atli/esp/esp-idf/components/esp_driver_sdm/include -I/home/atli/esp/esp-idf/components/esp_driver_i2c/include -I/home/atli/esp/esp-idf/components/esp_driver_uart/include -I/home/atli/esp/esp-idf/components/vfs/include -I/home/atli/esp/esp-idf/components/esp_driver_ledc/include -I/home/atli/esp/esp-idf/components/esp_driver_parlio/include -I/home/atli/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/atli/esp/esp-idf/components/esp_driver_twai/include -I/home/atli/Documents/Esp32/Esp32_main/components/sht31/include -I/home/atli/Documents/Esp32/Esp32_main/components/bmp280/include -I/home/atli/esp/esp-idf/components/esp_timer/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/atli/Documents/Esp32/Esp32_main=. -fmacro-prefix-map=/home/atli/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj -MF esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj.d -o esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj -c /home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c: In function 'sensor_manager_scan':
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:155:57: error: 'sht31_t' has no member named 'i2c_addr'
+  155 |         manager.status.sht31_address = manager.sht31_dev.i2c_addr;
+      |                                                         ^
+[6/20] Performing build step for 'bootloader'
+[1/1] cd /home/atli/Documents/Esp32/Esp32_main/build/bootloader/esp-idf/esptool_py && /home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/atli/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/atli/Documents/Esp32/Esp32_main/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[7/20] Building C object esp-idf/http_client/CMakeFiles/__idf_http_client.dir/http_client.c.obj
+FAILED: esp-idf/http_client/CMakeFiles/__idf_http_client.dir/http_client.c.obj 
+/home/atli/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/atli/Documents/Esp32/Esp32_main/build/config -I/home/atli/Documents/Esp32/Esp32_main/components/http_client/include -I/home/atli/esp/esp-idf/components/newlib/platform_include -I/home/atli/esp/esp-idf/components/freertos/config/include -I/home/atli/esp/esp-idf/components/freertos/config/include/freertos -I/home/atli/esp/esp-idf/components/freertos/config/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/atli/esp/esp-idf/components/freertos/esp_additions/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/atli/esp/esp-idf/components/esp_hw_support/dma/include -I/home/atli/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/atli/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/atli/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/atli/esp/esp-idf/components/heap/include -I/home/atli/esp/esp-idf/components/heap/tlsf -I/home/atli/esp/esp-idf/components/log/include -I/home/atli/esp/esp-idf/components/soc/include -I/home/atli/esp/esp-idf/components/soc/esp32 -I/home/atli/esp/esp-idf/components/soc/esp32/include -I/home/atli/esp/esp-idf/components/soc/esp32/register -I/home/atli/esp/esp-idf/components/hal/platform_port/include -I/home/atli/esp/esp-idf/components/hal/esp32/include -I/home/atli/esp/esp-idf/components/hal/include -I/home/atli/esp/esp-idf/components/esp_rom/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/atli/esp/esp-idf/components/esp_rom/esp32 -I/home/atli/esp/esp-idf/components/esp_common/include -I/home/atli/esp/esp-idf/components/esp_system/include -I/home/atli/esp/esp-idf/components/esp_system/port/soc -I/home/atli/esp/esp-idf/components/esp_system/port/include/private -I/home/atli/esp/esp-idf/components/xtensa/esp32/include -I/home/atli/esp/esp-idf/components/xtensa/include -I/home/atli/esp/esp-idf/components/xtensa/deprecated_include -I/home/atli/esp/esp-idf/components/lwip/include -I/home/atli/esp/esp-idf/components/lwip/include/apps -I/home/atli/esp/esp-idf/components/lwip/include/apps/sntp -I/home/atli/esp/esp-idf/components/lwip/lwip/src/include -I/home/atli/esp/esp-idf/components/lwip/port/include -I/home/atli/esp/esp-idf/components/lwip/port/freertos/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/atli/esp/esp-idf/components/esp_http_client/include -I/home/atli/esp/esp-idf/components/esp_event/include -I/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/include -I/home/atli/esp/esp-idf/components/driver/deprecated -I/home/atli/esp/esp-idf/components/driver/i2c/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/include -I/home/atli/esp/esp-idf/components/driver/twai/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/atli/esp/esp-idf/components/esp_pm/include -I/home/atli/esp/esp-idf/components/esp_ringbuf/include -I/home/atli/esp/esp-idf/components/esp_driver_gpio/include -I/home/atli/esp/esp-idf/components/esp_driver_pcnt/include -I/home/atli/esp/esp-idf/components/esp_driver_gptimer/include -I/home/atli/esp/esp-idf/components/esp_driver_spi/include -I/home/atli/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/atli/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/atli/esp/esp-idf/components/esp_driver_i2s/include -I/home/atli/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/atli/esp/esp-idf/components/sdmmc/include -I/home/atli/esp/esp-idf/components/esp_driver_sdspi/include -I/home/atli/esp/esp-idf/components/esp_driver_sdio/include -I/home/atli/esp/esp-idf/components/esp_driver_dac/include -I/home/atli/esp/esp-idf/components/esp_driver_rmt/include -I/home/atli/esp/esp-idf/components/esp_driver_tsens/include -I/home/atli/esp/esp-idf/components/esp_driver_sdm/include -I/home/atli/esp/esp-idf/components/esp_driver_i2c/include -I/home/atli/esp/esp-idf/components/esp_driver_uart/include -I/home/atli/esp/esp-idf/components/vfs/include -I/home/atli/esp/esp-idf/components/esp_driver_ledc/include -I/home/atli/esp/esp-idf/components/esp_driver_parlio/include -I/home/atli/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/atli/esp/esp-idf/components/esp_driver_twai/include -I/home/atli/Documents/Esp32/Esp32_main/components/sht31/include -I/home/atli/Documents/Esp32/Esp32_main/components/bmp280/include -I/home/atli/esp/esp-idf/components/json/cJSON -I/home/atli/esp/esp-idf/components/esp_timer/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/atli/Documents/Esp32/Esp32_main=. -fmacro-prefix-map=/home/atli/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/http_client/CMakeFiles/__idf_http_client.dir/http_client.c.obj -MF esp-idf/http_client/CMakeFiles/__idf_http_client.dir/http_client.c.obj.d -o esp-idf/http_client/CMakeFiles/__idf_http_client.dir/http_client.c.obj -c /home/atli/Documents/Esp32/Esp32_main/components/http_client/http_client.c
+/home/atli/Documents/Esp32/Esp32_main/components/http_client/http_client.c: In function 'build_json_payload':
+/home/atli/Documents/Esp32/Esp32_main/components/http_client/http_client.c:28:48: error: implicit declaration of function 'esp_timer_get_time'; did you mean 'timer_gettime'? [-Wimplicit-function-declaration]
+   28 |     cJSON_AddNumberToObject(root, "timestamp", esp_timer_get_time() / 1000000);
+      |                                                ^~~~~~~~~~~~~~~~~~
+      |                                                timer_gettime
+[8/20] Building C object esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj
+FAILED: esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj 
+/home/atli/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/atli/Documents/Esp32/Esp32_main/build/config -I/home/atli/Documents/Esp32/Esp32_main/components/sht31/include -I/home/atli/esp/esp-idf/components/newlib/platform_include -I/home/atli/esp/esp-idf/components/freertos/config/include -I/home/atli/esp/esp-idf/components/freertos/config/include/freertos -I/home/atli/esp/esp-idf/components/freertos/config/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/atli/esp/esp-idf/components/freertos/esp_additions/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/atli/esp/esp-idf/components/esp_hw_support/dma/include -I/home/atli/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/atli/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/atli/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/atli/esp/esp-idf/components/heap/include -I/home/atli/esp/esp-idf/components/heap/tlsf -I/home/atli/esp/esp-idf/components/log/include -I/home/atli/esp/esp-idf/components/soc/include -I/home/atli/esp/esp-idf/components/soc/esp32 -I/home/atli/esp/esp-idf/components/soc/esp32/include -I/home/atli/esp/esp-idf/components/soc/esp32/register -I/home/atli/esp/esp-idf/components/hal/platform_port/include -I/home/atli/esp/esp-idf/components/hal/esp32/include -I/home/atli/esp/esp-idf/components/hal/include -I/home/atli/esp/esp-idf/components/esp_rom/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/atli/esp/esp-idf/components/esp_rom/esp32 -I/home/atli/esp/esp-idf/components/esp_common/include -I/home/atli/esp/esp-idf/components/esp_system/include -I/home/atli/esp/esp-idf/components/esp_system/port/soc -I/home/atli/esp/esp-idf/components/esp_system/port/include/private -I/home/atli/esp/esp-idf/components/xtensa/esp32/include -I/home/atli/esp/esp-idf/components/xtensa/include -I/home/atli/esp/esp-idf/components/xtensa/deprecated_include -I/home/atli/esp/esp-idf/components/lwip/include -I/home/atli/esp/esp-idf/components/lwip/include/apps -I/home/atli/esp/esp-idf/components/lwip/include/apps/sntp -I/home/atli/esp/esp-idf/components/lwip/lwip/src/include -I/home/atli/esp/esp-idf/components/lwip/port/include -I/home/atli/esp/esp-idf/components/lwip/port/freertos/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/atli/esp/esp-idf/components/driver/deprecated -I/home/atli/esp/esp-idf/components/driver/i2c/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/include -I/home/atli/esp/esp-idf/components/driver/twai/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/atli/esp/esp-idf/components/esp_pm/include -I/home/atli/esp/esp-idf/components/esp_ringbuf/include -I/home/atli/esp/esp-idf/components/esp_driver_gpio/include -I/home/atli/esp/esp-idf/components/esp_driver_pcnt/include -I/home/atli/esp/esp-idf/components/esp_driver_gptimer/include -I/home/atli/esp/esp-idf/components/esp_driver_spi/include -I/home/atli/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/atli/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/atli/esp/esp-idf/components/esp_driver_i2s/include -I/home/atli/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/atli/esp/esp-idf/components/sdmmc/include -I/home/atli/esp/esp-idf/components/esp_driver_sdspi/include -I/home/atli/esp/esp-idf/components/esp_driver_sdio/include -I/home/atli/esp/esp-idf/components/esp_driver_dac/include -I/home/atli/esp/esp-idf/components/esp_driver_rmt/include -I/home/atli/esp/esp-idf/components/esp_driver_tsens/include -I/home/atli/esp/esp-idf/components/esp_driver_sdm/include -I/home/atli/esp/esp-idf/components/esp_driver_i2c/include -I/home/atli/esp/esp-idf/components/esp_driver_uart/include -I/home/atli/esp/esp-idf/components/vfs/include -I/home/atli/esp/esp-idf/components/esp_driver_ledc/include -I/home/atli/esp/esp-idf/components/esp_driver_parlio/include -I/home/atli/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/atli/esp/esp-idf/components/esp_driver_twai/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/atli/Documents/Esp32/Esp32_main=. -fmacro-prefix-map=/home/atli/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj -MF esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj.d -o esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj -c /home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_write_command':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:25:5: error: unknown type name 'i2c_cmd_handle_t'; did you mean 'intr_handle_t'?
+   25 |     i2c_cmd_handle_t cmd_handle = i2c_cmd_link_create();
+      |     ^~~~~~~~~~~~~~~~
+      |     intr_handle_t
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:25:35: error: implicit declaration of function 'i2c_cmd_link_create' [-Wimplicit-function-declaration]
+   25 |     i2c_cmd_handle_t cmd_handle = i2c_cmd_link_create();
+      |                                   ^~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:26:5: error: implicit declaration of function 'i2c_master_start'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   26 |     i2c_master_start(cmd_handle);
+      |     ^~~~~~~~~~~~~~~~
+      |     i2c_master_probe
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:27:5: error: implicit declaration of function 'i2c_master_write_byte'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   27 |     i2c_master_write_byte(cmd_handle, (dev->i2c_addr << 1) | I2C_MASTER_WRITE, true);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     i2c_master_probe
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:27:43: error: 'sht31_t' has no member named 'i2c_addr'
+   27 |     i2c_master_write_byte(cmd_handle, (dev->i2c_addr << 1) | I2C_MASTER_WRITE, true);
+      |                                           ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:30:5: error: implicit declaration of function 'i2c_master_stop'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   30 |     i2c_master_stop(cmd_handle);
+      |     ^~~~~~~~~~~~~~~
+      |     i2c_master_probe
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:32:21: error: implicit declaration of function 'i2c_master_cmd_begin' [-Wimplicit-function-declaration]
+   32 |     esp_err_t ret = i2c_master_cmd_begin(dev->i2c_port, cmd_handle, pdMS_TO_TICKS(1000));
+      |                     ^~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:32:45: error: 'sht31_t' has no member named 'i2c_port'
+   32 |     esp_err_t ret = i2c_master_cmd_begin(dev->i2c_port, cmd_handle, pdMS_TO_TICKS(1000));
+      |                                             ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:33:5: error: implicit declaration of function 'i2c_cmd_link_delete' [-Wimplicit-function-declaration]
+   33 |     i2c_cmd_link_delete(cmd_handle);
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_read_data':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:39:5: error: unknown type name 'i2c_cmd_handle_t'; did you mean 'intr_handle_t'?
+   39 |     i2c_cmd_handle_t cmd_handle = i2c_cmd_link_create();
+      |     ^~~~~~~~~~~~~~~~
+      |     intr_handle_t
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:41:43: error: 'sht31_t' has no member named 'i2c_addr'
+   41 |     i2c_master_write_byte(cmd_handle, (dev->i2c_addr << 1) | I2C_MASTER_READ, true);
+      |                                           ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:42:5: error: implicit declaration of function 'i2c_master_read'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   42 |     i2c_master_read(cmd_handle, data, len, I2C_MASTER_LAST_NACK);
+      |     ^~~~~~~~~~~~~~~
+      |     i2c_master_probe
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:45:45: error: 'sht31_t' has no member named 'i2c_port'
+   45 |     esp_err_t ret = i2c_master_cmd_begin(dev->i2c_port, cmd_handle, pdMS_TO_TICKS(1000));
+      |                                             ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_is_present':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:52:5: error: unknown type name 'i2c_cmd_handle_t'; did you mean 'intr_handle_t'?
+   52 |     i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+      |     ^~~~~~~~~~~~~~~~
+      |     intr_handle_t
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_init':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:67:16: error: implicit declaration of function 'sht31_init_desc'; did you mean 'sht31_init'? [-Wimplicit-function-declaration]
+   67 |         return sht31_init_desc(dev, I2C_NUM_0, SHT31_ADDR_44);
+      |                ^~~~~~~~~~~~~~~
+      |                sht31_init
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: At top level:
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:80:11: error: conflicting types for 'sht31_init_desc'; have 'esp_err_t(sht31_t *, i2c_port_t,  uint8_t)' {aka 'int(sht31_t *, i2c_port_t,  unsigned char)'}
+   80 | esp_err_t sht31_init_desc(sht31_t *dev, i2c_port_t i2c_port, uint8_t addr) {
+      |           ^~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:80:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+   80 | esp_err_t sht31_init_desc(sht31_t *dev, i2c_port_t i2c_port, uint8_t addr) {
+      | ^~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:67:16: note: previous implicit declaration of 'sht31_init_desc' with type 'int()'
+   67 |         return sht31_init_desc(dev, I2C_NUM_0, SHT31_ADDR_44);
+      |                ^~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_init_desc':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:86:8: error: 'sht31_t' has no member named 'i2c_port'
+   86 |     dev->i2c_port = i2c_port;
+      |        ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:87:8: error: 'sht31_t' has no member named 'i2c_addr'
+   87 |     dev->i2c_addr = addr;
+      |        ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:88:8: error: 'sht31_t' has no member named 'repeatability'
+   88 |     dev->repeatability = SHT31_REPEATABILITY_HIGH;
+      |        ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:88:26: error: 'SHT31_REPEATABILITY_HIGH' undeclared (first use in this function)
+   88 |     dev->repeatability = SHT31_REPEATABILITY_HIGH;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:88:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:97:21: error: implicit declaration of function 'sht31_soft_reset' [-Wimplicit-function-declaration]
+   97 |     esp_err_t ret = sht31_soft_reset(dev);
+      |                     ^~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:104:11: error: implicit declaration of function 'sht31_clear_status' [-Wimplicit-function-declaration]
+  104 |     ret = sht31_clear_status(dev);
+      |           ^~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:109:8: error: 'sht31_t' has no member named 'initialized'
+  109 |     dev->initialized = true;
+      |        ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_deinit':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:117:28: error: 'sht31_t' has no member named 'initialized'
+  117 |     if (dev == NULL || !dev->initialized) {
+      |                            ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:121:8: error: 'sht31_t' has no member named 'initialized'
+  121 |     dev->initialized = false;
+      |        ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_soft_reset':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:131:46: error: 'SHT31_CMD_SOFT_RESET' undeclared (first use in this function)
+  131 |     esp_err_t ret = sht31_write_command(dev, SHT31_CMD_SOFT_RESET);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_read_temperature_humidity':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:140:28: error: 'sht31_t' has no member named 'initialized'
+  140 |     if (dev == NULL || !dev->initialized) {
+      |                            ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:148:16: error: 'sht31_t' has no member named 'repeatability'
+  148 |     switch (dev->repeatability) {
+      |                ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:149:14: error: 'SHT31_REPEATABILITY_LOW' undeclared (first use in this function)
+  149 |         case SHT31_REPEATABILITY_LOW:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:150:19: error: 'SHT31_CMD_MEASURE_LOW_REP' undeclared (first use in this function)
+  150 |             cmd = SHT31_CMD_MEASURE_LOW_REP;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:153:14: error: 'SHT31_REPEATABILITY_MEDIUM' undeclared (first use in this function)
+  153 |         case SHT31_REPEATABILITY_MEDIUM:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:154:19: error: 'SHT31_CMD_MEASURE_MED_REP' undeclared (first use in this function)
+  154 |             cmd = SHT31_CMD_MEASURE_MED_REP;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:157:14: error: 'SHT31_REPEATABILITY_HIGH' undeclared (first use in this function)
+  157 |         case SHT31_REPEATABILITY_HIGH:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:159:19: error: 'SHT31_CMD_MEASURE_HIGH_REP' undeclared (first use in this function)
+  159 |             cmd = SHT31_CMD_MEASURE_HIGH_REP;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_read_status':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:219:46: error: 'SHT31_CMD_READ_STATUS' undeclared (first use in this function)
+  219 |     esp_err_t ret = sht31_write_command(dev, SHT31_CMD_READ_STATUS);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_clear_status':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:249:37: error: 'SHT31_CMD_CLEAR_STATUS' undeclared (first use in this function)
+  249 |     return sht31_write_command(dev, SHT31_CMD_CLEAR_STATUS);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_heater_enable':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:258:29: error: 'SHT31_CMD_HEATER_ENABLE' undeclared (first use in this function)
+  258 |     uint16_t cmd = enable ? SHT31_CMD_HEATER_ENABLE : SHT31_CMD_HEATER_DISABLE;
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:258:55: error: 'SHT31_CMD_HEATER_DISABLE' undeclared (first use in this function)
+  258 |     uint16_t cmd = enable ? SHT31_CMD_HEATER_ENABLE : SHT31_CMD_HEATER_DISABLE;
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c: In function 'sht31_clear_status':
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:250:1: error: control reaches end of non-void function [-Werror=return-type]
+  250 | }
+      | ^
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

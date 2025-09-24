@@ -1,0 +1,2 @@
+source /home/atli/Documents/Esp32/Esp32_main/build/bootloader/gdbinit/symbols
+source /home/atli/Documents/Esp32/Esp32_main/build/bootloader/gdbinit/connect

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/atli/Documents/Esp32/Esp32_main/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

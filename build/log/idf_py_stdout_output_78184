@@ -1,0 +1,157 @@
+Command: ninja all
+[1/14] Performing build step for 'bootloader'
+[1/1] cd /home/atli/Documents/Esp32/Esp32_main/build/bootloader/esp-idf/esptool_py && /home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/atli/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/atli/Documents/Esp32/Esp32_main/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/14] Building C object esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj
+FAILED: esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj 
+/home/atli/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/atli/Documents/Esp32/Esp32_main/build/config -I/home/atli/Documents/Esp32/Esp32_main/components/sht31/include -I/home/atli/esp/esp-idf/components/newlib/platform_include -I/home/atli/esp/esp-idf/components/freertos/config/include -I/home/atli/esp/esp-idf/components/freertos/config/include/freertos -I/home/atli/esp/esp-idf/components/freertos/config/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/atli/esp/esp-idf/components/freertos/esp_additions/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/atli/esp/esp-idf/components/esp_hw_support/dma/include -I/home/atli/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/atli/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/atli/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/atli/esp/esp-idf/components/heap/include -I/home/atli/esp/esp-idf/components/heap/tlsf -I/home/atli/esp/esp-idf/components/log/include -I/home/atli/esp/esp-idf/components/soc/include -I/home/atli/esp/esp-idf/components/soc/esp32 -I/home/atli/esp/esp-idf/components/soc/esp32/include -I/home/atli/esp/esp-idf/components/soc/esp32/register -I/home/atli/esp/esp-idf/components/hal/platform_port/include -I/home/atli/esp/esp-idf/components/hal/esp32/include -I/home/atli/esp/esp-idf/components/hal/include -I/home/atli/esp/esp-idf/components/esp_rom/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/atli/esp/esp-idf/components/esp_rom/esp32 -I/home/atli/esp/esp-idf/components/esp_common/include -I/home/atli/esp/esp-idf/components/esp_system/include -I/home/atli/esp/esp-idf/components/esp_system/port/soc -I/home/atli/esp/esp-idf/components/esp_system/port/include/private -I/home/atli/esp/esp-idf/components/xtensa/esp32/include -I/home/atli/esp/esp-idf/components/xtensa/include -I/home/atli/esp/esp-idf/components/xtensa/deprecated_include -I/home/atli/esp/esp-idf/components/lwip/include -I/home/atli/esp/esp-idf/components/lwip/include/apps -I/home/atli/esp/esp-idf/components/lwip/include/apps/sntp -I/home/atli/esp/esp-idf/components/lwip/lwip/src/include -I/home/atli/esp/esp-idf/components/lwip/port/include -I/home/atli/esp/esp-idf/components/lwip/port/freertos/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/atli/esp/esp-idf/components/driver/deprecated -I/home/atli/esp/esp-idf/components/driver/i2c/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/include -I/home/atli/esp/esp-idf/components/driver/twai/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/atli/esp/esp-idf/components/esp_pm/include -I/home/atli/esp/esp-idf/components/esp_ringbuf/include -I/home/atli/esp/esp-idf/components/esp_driver_gpio/include -I/home/atli/esp/esp-idf/components/esp_driver_pcnt/include -I/home/atli/esp/esp-idf/components/esp_driver_gptimer/include -I/home/atli/esp/esp-idf/components/esp_driver_spi/include -I/home/atli/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/atli/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/atli/esp/esp-idf/components/esp_driver_i2s/include -I/home/atli/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/atli/esp/esp-idf/components/sdmmc/include -I/home/atli/esp/esp-idf/components/esp_driver_sdspi/include -I/home/atli/esp/esp-idf/components/esp_driver_sdio/include -I/home/atli/esp/esp-idf/components/esp_driver_dac/include -I/home/atli/esp/esp-idf/components/esp_driver_rmt/include -I/home/atli/esp/esp-idf/components/esp_driver_tsens/include -I/home/atli/esp/esp-idf/components/esp_driver_sdm/include -I/home/atli/esp/esp-idf/components/esp_driver_i2c/include -I/home/atli/esp/esp-idf/components/esp_driver_uart/include -I/home/atli/esp/esp-idf/components/vfs/include -I/home/atli/esp/esp-idf/components/esp_driver_ledc/include -I/home/atli/esp/esp-idf/components/esp_driver_parlio/include -I/home/atli/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/atli/esp/esp-idf/components/esp_driver_twai/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/atli/Documents/Esp32/Esp32_main=. -fmacro-prefix-map=/home/atli/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj -MF esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj.d -o esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj -c /home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:222:61: error: 'temp_raw' undeclared here (not in a function)
+  222 | static uint8_t     *temperature = -45.0f + 175.0f * ((float)temp_raw / 65535.0f);
+      |                                                             ^~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:223:5: warning: data definition has no type or storage class
+  223 |     *humidity = 100.0f * ((float)hum_raw / 65535.0f);
+      |     ^
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:223:6: error: type defaults to 'int' in declaration of 'humidity' [-Wimplicit-int]
+  223 |     *humidity = 100.0f * ((float)hum_raw / 65535.0f);
+      |      ^~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:223:34: error: 'hum_raw' undeclared here (not in a function)
+  223 |     *humidity = 100.0f * ((float)hum_raw / 65535.0f);
+      |                                  ^~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:226:5: error: expected identifier or '(' before 'if'
+  226 |     if (*humidity > 100.0f) *humidity = 100.0f;
+      |     ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:227:5: error: expected identifier or '(' before 'if'
+  227 |     if (*humidity < 0.0f) *humidity = 0.0f;
+      |     ^~
+In file included from /home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:2:
+/home/atli/esp/esp-idf/components/log/include/esp_log.h:129:36: error: expected identifier or '(' before 'do'
+  129 | #define ESP_LOGD(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG, tag, format, ##__VA_ARGS__); } while(0)
+      |                                    ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:229:5: note: in expansion of macro 'ESP_LOGD'
+  229 |     ESP_LOGD(TAG, "Temperature: %.2f°C, Humidity: %.2f%%", *temperature, *humidity);c8(const uint8_t *data, size_t len) {
+      |     ^~~~~~~~
+/home/atli/esp/esp-idf/components/log/include/esp_log.h:129:107: error: expected identifier or '(' before 'while'
+  129 | #define ESP_LOGD(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG, tag, format, ##__VA_ARGS__); } while(0)
+      |                                                                                                           ^~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:229:5: note: in expansion of macro 'ESP_LOGD'
+  229 |     ESP_LOGD(TAG, "Temperature: %.2f°C, Humidity: %.2f%%", *temperature, *humidity);c8(const uint8_t *data, size_t len) {
+      |     ^~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:229:85: error: return type defaults to 'int' [-Wimplicit-int]
+  229 |     ESP_LOGD(TAG, "Temperature: %.2f°C, Humidity: %.2f%%", *temperature, *humidity);c8(const uint8_t *data, size_t len) {
+      |                                                                                     ^~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:243:18: error: redefinition of 'sht31_write_command'
+  243 | static esp_err_t sht31_write_command(sht31_t *dev, uint16_t cmd) {
+      |                  ^~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:24:18: note: previous definition of 'sht31_write_command' with type 'esp_err_t(sht31_t *, uint16_t)' {aka 'int(sht31_t *, short unsigned int)'}
+   24 | static esp_err_t sht31_write_command(sht31_t *dev, uint16_t cmd) {
+      |                  ^~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:257:18: error: redefinition of 'sht31_read_data'
+  257 | static esp_err_t sht31_read_data(sht31_t *dev, uint8_t *data, size_t len) {
+      |                  ^~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:38:18: note: previous definition of 'sht31_read_data' with type 'esp_err_t(sht31_t *, uint8_t *, size_t)' {aka 'int(sht31_t *, unsigned char *, unsigned int)'}
+   38 | static esp_err_t sht31_read_data(sht31_t *dev, uint8_t *data, size_t len) {
+      |                  ^~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:283:11: error: redefinition of 'sht31_init'
+  283 | esp_err_t sht31_init(sht31_t *dev) {
+      |           ^~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:63:11: note: previous definition of 'sht31_init' with type 'esp_err_t(sht31_t *)' {aka 'int(sht31_t *)'}
+   63 | esp_err_t sht31_init(sht31_t *dev) {
+      |           ^~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:299:11: error: redefinition of 'sht31_init_desc'
+  299 | esp_err_t sht31_init_desc(sht31_t *dev, i2c_port_t i2c_port, uint8_t addr) {
+      |           ^~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:51:11: note: previous definition of 'sht31_init_desc' with type 'esp_err_t(sht31_t *, i2c_port_t,  uint8_t)' {aka 'int(sht31_t *, i2c_port_t,  unsigned char)'}
+   51 | esp_err_t sht31_init_desc(sht31_t *dev, i2c_port_t i2c_port, uint8_t addr) {
+      |           ^~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:335:11: error: redefinition of 'sht31_deinit'
+  335 | esp_err_t sht31_deinit(sht31_t *dev) {
+      |           ^~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:212:11: note: previous definition of 'sht31_deinit' with type 'esp_err_t(sht31_t *)' {aka 'int(sht31_t *)'}
+  212 | esp_err_t sht31_deinit(sht31_t *dev) {
+      |           ^~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:345:11: error: redefinition of 'sht31_soft_reset'
+  345 | esp_err_t sht31_soft_reset(sht31_t *dev) {
+      |           ^~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:75:11: note: previous definition of 'sht31_soft_reset' with type 'esp_err_t(sht31_t *)' {aka 'int(sht31_t *)'}
+   75 | esp_err_t sht31_soft_reset(sht31_t *dev) {
+      |           ^~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:358:11: error: redefinition of 'sht31_read_temperature_humidity'
+  358 | esp_err_t sht31_read_temperature_humidity(sht31_t *dev, float *temperature, float *humidity) {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:88:11: note: previous definition of 'sht31_read_temperature_humidity' with type 'esp_err_t(sht31_t *, float *, float *)' {aka 'int(sht31_t *, float *, float *)'}
+   88 | esp_err_t sht31_read_temperature_humidity(sht31_t *dev, float *temperature, float *humidity) {
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:433:11: error: redefinition of 'sht31_read_status'
+  433 | esp_err_t sht31_read_status(sht31_t *dev, uint16_t *status) {
+      |           ^~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:163:11: note: previous definition of 'sht31_read_status' with type 'esp_err_t(sht31_t *, uint16_t *)' {aka 'int(sht31_t *, short unsigned int *)'}
+  163 | esp_err_t sht31_read_status(sht31_t *dev, uint16_t *status) {
+      |           ^~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:463:11: error: redefinition of 'sht31_clear_status'
+  463 | esp_err_t sht31_clear_status(sht31_t *dev) {
+      |           ^~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:193:11: note: previous definition of 'sht31_clear_status' with type 'esp_err_t(sht31_t *)' {aka 'int(sht31_t *)'}
+  193 | esp_err_t sht31_clear_status(sht31_t *dev) {
+      |           ^~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:472:11: error: redefinition of 'sht31_heater_enable'
+  472 | esp_err_t sht31_heater_enable(sht31_t *dev, bool enable) {
+      |           ^~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:202:11: note: previous definition of 'sht31_heater_enable' with type 'esp_err_t(sht31_t *, _Bool)' {aka 'int(sht31_t *, _Bool)'}
+  202 | esp_err_t sht31_heater_enable(sht31_t *dev, bool enable) {
+      |           ^~~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sht31/sht31.c:222:21: warning: 'temperature' defined but not used [-Wunused-variable]
+  222 | static uint8_t     *temperature = -45.0f + 175.0f * ((float)temp_raw / 65535.0f);
+      |                     ^~~~~~~~~~~
+[3/14] Building C object esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj
+FAILED: esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj 
+/home/atli/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/atli/Documents/Esp32/Esp32_main/build/config -I/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/include -I/home/atli/esp/esp-idf/components/newlib/platform_include -I/home/atli/esp/esp-idf/components/freertos/config/include -I/home/atli/esp/esp-idf/components/freertos/config/include/freertos -I/home/atli/esp/esp-idf/components/freertos/config/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/atli/esp/esp-idf/components/freertos/esp_additions/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc -I/home/atli/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/atli/esp/esp-idf/components/esp_hw_support/dma/include -I/home/atli/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/atli/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/atli/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/atli/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/atli/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/atli/esp/esp-idf/components/heap/include -I/home/atli/esp/esp-idf/components/heap/tlsf -I/home/atli/esp/esp-idf/components/log/include -I/home/atli/esp/esp-idf/components/soc/include -I/home/atli/esp/esp-idf/components/soc/esp32 -I/home/atli/esp/esp-idf/components/soc/esp32/include -I/home/atli/esp/esp-idf/components/soc/esp32/register -I/home/atli/esp/esp-idf/components/hal/platform_port/include -I/home/atli/esp/esp-idf/components/hal/esp32/include -I/home/atli/esp/esp-idf/components/hal/include -I/home/atli/esp/esp-idf/components/esp_rom/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include -I/home/atli/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/atli/esp/esp-idf/components/esp_rom/esp32 -I/home/atli/esp/esp-idf/components/esp_common/include -I/home/atli/esp/esp-idf/components/esp_system/include -I/home/atli/esp/esp-idf/components/esp_system/port/soc -I/home/atli/esp/esp-idf/components/esp_system/port/include/private -I/home/atli/esp/esp-idf/components/xtensa/esp32/include -I/home/atli/esp/esp-idf/components/xtensa/include -I/home/atli/esp/esp-idf/components/xtensa/deprecated_include -I/home/atli/esp/esp-idf/components/lwip/include -I/home/atli/esp/esp-idf/components/lwip/include/apps -I/home/atli/esp/esp-idf/components/lwip/include/apps/sntp -I/home/atli/esp/esp-idf/components/lwip/lwip/src/include -I/home/atli/esp/esp-idf/components/lwip/port/include -I/home/atli/esp/esp-idf/components/lwip/port/freertos/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/atli/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/atli/esp/esp-idf/components/driver/deprecated -I/home/atli/esp/esp-idf/components/driver/i2c/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/include -I/home/atli/esp/esp-idf/components/driver/twai/include -I/home/atli/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/atli/esp/esp-idf/components/esp_pm/include -I/home/atli/esp/esp-idf/components/esp_ringbuf/include -I/home/atli/esp/esp-idf/components/esp_driver_gpio/include -I/home/atli/esp/esp-idf/components/esp_driver_pcnt/include -I/home/atli/esp/esp-idf/components/esp_driver_gptimer/include -I/home/atli/esp/esp-idf/components/esp_driver_spi/include -I/home/atli/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/atli/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/atli/esp/esp-idf/components/esp_driver_i2s/include -I/home/atli/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/atli/esp/esp-idf/components/sdmmc/include -I/home/atli/esp/esp-idf/components/esp_driver_sdspi/include -I/home/atli/esp/esp-idf/components/esp_driver_sdio/include -I/home/atli/esp/esp-idf/components/esp_driver_dac/include -I/home/atli/esp/esp-idf/components/esp_driver_rmt/include -I/home/atli/esp/esp-idf/components/esp_driver_tsens/include -I/home/atli/esp/esp-idf/components/esp_driver_sdm/include -I/home/atli/esp/esp-idf/components/esp_driver_i2c/include -I/home/atli/esp/esp-idf/components/esp_driver_uart/include -I/home/atli/esp/esp-idf/components/vfs/include -I/home/atli/esp/esp-idf/components/esp_driver_ledc/include -I/home/atli/esp/esp-idf/components/esp_driver_parlio/include -I/home/atli/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/atli/esp/esp-idf/components/esp_driver_twai/include -I/home/atli/Documents/Esp32/Esp32_main/components/sht31/include -I/home/atli/Documents/Esp32/Esp32_main/components/bmp280/include -I/home/atli/esp/esp-idf/components/esp_timer/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/atli/Documents/Esp32/Esp32_main=. -fmacro-prefix-map=/home/atli/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj -MF esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj.d -o esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj -c /home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:284:5: error: expected identifier or '(' before 'switch'
+  284 |     switch (sensor) {
+      |     ^~~~~~
+In file included from /home/atli/esp/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:22,
+                 from /home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from /home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/include/sensor_manager.h:5,
+                 from /home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:1:
+/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:60: error: expected declaration specifiers or '...' before '(' token
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                            ^
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:305:5: note: in expansion of macro 'xSemaphoreGive'
+  305 |     xSemaphoreGive(manager.data_mutex);
+      |     ^~~~~~~~~~~~~~
+In file included from /home/atli/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h:17,
+                 from /home/atli/esp/esp-idf/components/log/include/esp_log_args.h:10,
+                 from /home/atli/esp/esp-idf/components/log/include/esp_log.h:21,
+                 from /home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:5:
+/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:94: error: expected declaration specifiers or '...' before '(' token
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                                                              ^~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:305:5: note: in expansion of macro 'xSemaphoreGive'
+  305 |     xSemaphoreGive(manager.data_mutex);
+      |     ^~~~~~~~~~~~~~
+/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:46:45: error: expected declaration specifiers or '...' before '(' token
+   46 | #define semGIVE_BLOCK_TIME                  ( ( TickType_t ) 0U )
+      |                                             ^
+/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:100: note: in expansion of macro 'semGIVE_BLOCK_TIME'
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                                                                    ^~~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:305:5: note: in expansion of macro 'xSemaphoreGive'
+  305 |     xSemaphoreGive(manager.data_mutex);
+      |     ^~~~~~~~~~~~~~
+In file included from /home/atli/esp/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:21:
+/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h:74:47: error: expected declaration specifiers or '...' before '(' token
+   74 | #define queueSEND_TO_BACK                     ( ( BaseType_t ) 0 )
+      |                                               ^
+/home/atli/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:120: note: in expansion of macro 'queueSEND_TO_BACK'
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                                                                                        ^~~~~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:305:5: note: in expansion of macro 'xSemaphoreGive'
+  305 |     xSemaphoreGive(manager.data_mutex);
+      |     ^~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:306:5: error: expected identifier or '(' before 'return'
+  306 |     return ESP_ERR_NOT_FOUND;
+      |     ^~~~~~
+/home/atli/Documents/Esp32/Esp32_main/components/sensor_manager/sensor_manager.c:307:1: error: expected identifier or '(' before '}' token
+  307 | }
+      | ^
+[4/14] No install step for 'bootloader'
+ninja: build stopped: subcommand failed.
