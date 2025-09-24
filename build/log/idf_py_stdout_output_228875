@@ -1,0 +1,559 @@
+Command: /home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/atli/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/atli/Documents/Esp32/Esp32_main/build/esp32-temp-monitor.elf /home/atli/Documents/Esp32/Esp32_main/build/bootloader/bootloader.elf -m '/home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/atli/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0' '-b' '115200'
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) map
+=ab5ech (701932) ma21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 23 2025 21:12:43[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20b98h (134040) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=00030bc0 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00030be8 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (144) esp_image: segment 3: paddr=00034b48 vaddr=40080000 size=0b4d0h ( 46288) load[0m
+[0;32mI (163) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=ab5ech (701932) map[0m
+[0;32mI (403) esp_image: segment 5: paddr=000eb614 vaddr=4008b4d0 size=0dc84h ( 56452) load[0m
+[0;32mI (437) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (438) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) app_init: Application information:[0m
+[0;32mI (457) app_init: Project name:     esp32-temp-monitor[0m
+[0;32mI (461) app_init: App version:      382f59b-dirty[0m
+[0;32mI (466) app_init: Compile time:     Sep 24 2025 17:39:09[0m
+[0;32mI (471) app_init: ELF file SHA256:  808d84c4f...[0m
+[0;32mI (475) app_init: ESP-IDF:          v5.5-dirty[0m
+[0;32mI (479) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (483) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (487) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (491) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (497) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (502) heap_init: At 3FFB8908 len 000276F8 (157 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 40099154 len 00006EAC (27 KiB): IRAM[0m
+[0;32mI (525) spi_flash: detected chip: generic[0m
+[0;32mI (527) spi_flash: flash io: dio[0m
+[0;33mW (530) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (543) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (553) main_task: Started on CPU0[0m
+[0;32mI (563) main_task: Calling app_main()[0m
+[0;32mI (563) MAIN: Environmental Monitor Starting...[0m
+[0;33mW (563) MAIN: DEBUG MODE IS ENABLED[0m
+[0;32mI (563) MAIN: Initializing WiFi...[0m
+[0;32mI (603) wifi:wifi driver task: 3ffc092c, prio:23, stack:6656, core=0[0m
+[0;32mI (613) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (613) wifi:wifi certification version: v7.0[0m
+[0;32mI (613) wifi:config NVS flash: enabled[0m
+[0;32mI (613) wifi:config nano formatting: disabled[0m
+[0;32mI (623) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (633) wifi:Init management short buffer num: 32[0m
+[0;32mI (633) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (633) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (643) wifi:Init static rx buffer num: 10[0m
+[0;32mI (643) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (653) wifi_init: rx ba win: 6[0m
+[0;32mI (653) wifi_init: accept mbox: 6[0m
+[0;32mI (653) wifi_init: tcpip mbox: 32[0m
+[0;32mI (653) wifi_init: udp mbox: 6[0m
+[0;32mI (663) wifi_init: tcp mbox: 6[0m
+[0;32mI (663) wifi_init: tcp tx win: 5760[0m
+[0;32mI (663) wifi_init: tcp rx win: 5760[0m
+[0;32mI (673) wifi_init: tcp mss: 1440[0m
+[0;32mI (673) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (673) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (683) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (763) wifi:mode : sta (6c:c8:40:35:4e:c0)[0m
+[0;32mI (763) wifi:enable tsf[0m
+[0;32mI (763) WIFI_MANAGER: WiFi initialization finished. Connecting to Funhouse...[0m
+[0;32mI (783) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (783) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (793) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (803) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (813) wifi:connected with Funhouse, aid = 3, channel 5, BW20, bssid = 42:bd:c8:f9:7b:b5[0m
+[0;32mI (813) wifi:security: WPA2-PSK, phy: bgn, rssi: -85[0m
+[0;32mI (823) wifi:pm start, type: 1[0m
+
+[0;32mI (823) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (843) wifi:<ba-add>idx:0 (ifx:0, 42:bd:c8:f9:7b:b5), tid:6, ssn:2, winSize:64[0m
+[0;32mI (843) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1883) esp_netif_handlers: sta ip: 192.168.8.141, mask: 255.255.255.0, gw: 192.168.8.1[0m
+[0;32mI (1883) WIFI_MANAGER: Connected! IP: 192.168.8.141[0m
+[0;32mI (1883) WIFI_MANAGER: Connected to AP SSID:Funhouse[0m
+[0;32mI (1883) MAIN: WiFi connected successfully[0m
+[0;32mI (1893) MAIN: Initializing Sensor Manager...[0m
+[1;31mE (1903) BMP280: Failed to read chip ID[0m
+[0;32mI (2063) MAIN: Found 2 sensor(s), auto-read started[0m
+[0;32mI (2063) MAIN: Initializing HTTP Client...[0m
+[0;32mI (2063) MAIN: HTTP send task started[0m
+
+======================================
+    ESP32 Environmental Monitor
+        DEBUG MODE ENABLED
+======================================
+Commands:
+  r - Read sensors now
+  s - Show sensor status
+  d - Show sensor data
+  y - Show system status
+  w - Show WiFi status
+[0;32mI (2073) MAIN: System initialized. Mode: DEBUG[0m
+  h - Test HTTP connection
+  i - Scan I2C bus
+  ? - Show this help
+======================================
+
+Ready for commands (press key + enter):
+
+=== ESP32 Environmental Monitor Ready ===
+
+=== Current Sensor Status ===
+Sensors found: 2
+SHT31:  Found (0x44)
+BMP280: Found (0x76)
+Reads: 0 successful, 0 errors
+============================
+
+[1;31mE (3063) SENSOR_MGR: Failed to take data mutex[0m
+[1;31mE (3073) SHT31: Failed to read measurement data[0m
+[1;31mE (3073) SENSOR_MGR: Failed to read SHT31: ESP_ERR_TIMEOUT[0m
+[0;33mW (3073) SENSOR_MGR: One or more sensors failed to read[0m
+[1;31mE (5133) SHT31: Failed to read measurement data[0m
+[1;31mE (5133) SENSOR_MGR: Failed to read SHT31: ESP_ERR_TIMEOUT[0m
+[0;33mW (5133) SENSOR_MGR: One or more sensors failed to read[0m
+
+=== Latest Sensor Readings ===
+SHT31:
+  Temperature: 0.00°C (32.0°F)
+  Humidity:    0.0%
+  Dew Point:   0.0°C
+BMP280:
+  Temperature: 27.59°C (81.7°F)
+  Pressure:    100404 Pa (1004.04 hPa)
+  Altitude:    76.9 m (252.4 ft)
+=============================
+
+
+=== System Status ===
+WiFi: Connected
+HTTP: 0 success, 0 failed
+Uptime: 0.1 minutes
+====================
+
+Use debug commands above to interact with the system.
+[0;32mI (5173) main_task: Returned from app_main()[0m
+[1;31mE (8093) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (8093) transport_base: Fai

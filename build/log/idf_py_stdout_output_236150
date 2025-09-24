@@ -1,0 +1,94 @@
+Command: ninja flash
+[1/14] Performing build step for 'bootloader'
+[1/1] cd /home/atli/Documents/Esp32/Esp32_main/build/bootloader/esp-idf/esptool_py && /home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/atli/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/atli/Documents/Esp32/Esp32_main/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/14] No install step for 'bootloader'
+[3/14] Completed 'bootloader'
+[4/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/atli/Documents/Esp32/Esp32_main/main/main.c:54:13: warning: 'i2c_scanner' defined but not used [-Wunused-function]
+   54 | static void i2c_scanner(void) {
+      |             ^~~~~~~~~~~
+[5/14] Building C object esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj
+[6/14] Linking C static library esp-idf/sht31/libsht31.a
+[7/14] Building C object esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj
+[8/14] Linking C static library esp-idf/sensor_manager/libsensor_manager.a
+[9/14] Linking C static library esp-idf/main/libmain.a
+[10/14] Generating esp-idf/esp_system/ld/sections.ld
+[11/14] Linking CXX executable esp32-temp-monitor.elf
+[12/14] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/atli/Documents/Esp32/Esp32_main/build/esp32-temp-monitor.bin
+[13/14] cd /home/atli/Documents/Esp32/Esp32_main/build/esp-idf/esptool_py && /home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/atli/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/atli/Documents/Esp32/Esp32_main/build/partition_table/partition-table.bin /home/atli/Documents/Esp32/Esp32_main/build/esp32-temp-monitor.bin
+esp32-temp-monitor.bin binary size 0xe8840 bytes. Smallest app partition is 0x100000 bytes. 0x177c0 bytes (9%) free.
+[13/14] cd /home/atli/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/atli/esp/esp-idf -D "SERIAL_TOOL=/home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python;;/home/atli/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/atli/Documents/Esp32/Esp32_main/build -P /home/atli/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 esp32-temp-monitor.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.dev2
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 6c:c8:40:35:4e:c0
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16488...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075fc... (100 %)
+Wrote 26240 bytes (16488 compressed) at 0x00001000 in 1.6 seconds (effective 129.3 kbit/s)...
+Hash of data verified.
+Compressed 952384 bytes to 593422...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001cb55... (5 %)
+Writing at 0x000273c1... (8 %)
+Writing at 0x000319ed... (10 %)
+Writing at 0x000392ca... (13 %)
+Writing at 0x0003ebcd... (16 %)
+Writing at 0x000444be... (18 %)
+Writing at 0x0004a39a... (21 %)
+Writing at 0x00050303... (24 %)
+Writing at 0x00055ece... (27 %)
+Writing at 0x0005bfd2... (29 %)
+Writing at 0x00061c4d... (32 %)
+Writing at 0x000681f9... (35 %)
+Writing at 0x0006d702... (37 %)
+Writing at 0x00072b8f... (40 %)
+Writing at 0x00078ae8... (43 %)
+Writing at 0x0007e40c... (45 %)
+Writing at 0x00083b7b... (48 %)
+Writing at 0x00089538... (51 %)
+Writing at 0x0008f636... (54 %)
+Writing at 0x00095121... (56 %)
+Writing at 0x0009a9e2... (59 %)
+Writing at 0x000a067c... (62 %)
+Writing at 0x000a6460... (64 %)
+Writing at 0x000abd47... (67 %)
+Writing at 0x000b1ac6... (70 %)
+Writing at 0x000b7caa... (72 %)
+Writing at 0x000bd993... (75 %)
+Writing at 0x000c34e4... (78 %)
+Writing at 0x000c8f96... (81 %)
+Writing at 0x000ce8e3... (83 %)
+Writing at 0x000d4754... (86 %)
+Writing at 0x000de4d8... (89 %)
+Writing at 0x000e5e08... (91 %)
+Writing at 0x000ebd99... (94 %)
+Writing at 0x000f1ad1... (97 %)
+Writing at 0x000f6fce... (100 %)
+Wrote 952384 bytes (593422 compressed) at 0x00010000 in 52.4 seconds (effective 145.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 841.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

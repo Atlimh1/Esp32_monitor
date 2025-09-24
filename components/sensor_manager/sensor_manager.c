@@ -33,7 +33,7 @@ static esp_err_t init_i2c(void) {
         .scl_io_num = manager.config.scl_pin,
         .sda_pullup_en = GPIO_PULLUP_ENABLE,
         .scl_pullup_en = GPIO_PULLUP_ENABLE,
-        .master.clk_speed = 100000,
+        .master.clk_speed = 50000,
         .clk_flags = 0,
     };
     
@@ -120,6 +120,10 @@ esp_err_t sensor_manager_deinit(void) {
         bmp280_deinit(&manager.bmp280_dev);
     }
     
+    if (manager.status.sht31_found) {
+        sht31_deinit(&manager.sht31_dev);
+    }
+    
     // Delete I2C driver
     i2c_driver_delete(manager.config.i2c_port);
     
@@ -148,14 +152,31 @@ esp_err_t sensor_manager_scan(void) {
     manager.status.bmp280_found = false;
     manager.status.total_sensors = 0;
     
-    // Try to initialize SHT31
-    esp_err_t ret = sht31_init(&manager.sht31_dev);
+    // Try to initialize SHT31 at both possible addresses
+    esp_err_t ret = sht31_init_desc(&manager.sht31_dev, manager.config.i2c_port, SHT31_ADDR_44);
     if (ret == ESP_OK) {
-        manager.status.sht31_found = true;
-        manager.status.sht31_address = manager.sht31_dev.i2c_addr;
-        manager.status.total_sensors++;
-        ESP_LOGI(TAG, "SHT31 found at address 0x%02X", manager.status.sht31_address);
-    } else {
+        ret = sht31_init(&manager.sht31_dev);
+        if (ret == ESP_OK) {
+            manager.status.sht31_found = true;
+            manager.status.sht31_address = SHT31_ADDR_44;
+            manager.status.total_sensors++;
+            ESP_LOGI(TAG, "SHT31 found at address 0x%02X", SHT31_ADDR_44);
+        } else {
+            // Try alternate address
+            ret = sht31_init_desc(&manager.sht31_dev, manager.config.i2c_port, SHT31_ADDR_45);
+            if (ret == ESP_OK) {
+                ret = sht31_init(&manager.sht31_dev);
+                if (ret == ESP_OK) {
+                    manager.status.sht31_found = true;
+                    manager.status.sht31_address = SHT31_ADDR_45;
+                    manager.status.total_sensors++;
+                    ESP_LOGI(TAG, "SHT31 found at address 0x%02X", SHT31_ADDR_45);
+                }
+            }
+        }
+    }
+
+    if (!manager.status.sht31_found) {
         ESP_LOGW(TAG, "SHT31 not found");
     }
     
@@ -280,42 +301,43 @@ esp_err_t sensor_manager_read_all(void) {
     
     return final_ret;
 }
-    
-
 
 // Get sensor data by type
-esp_err_t sensor_manager_get_sensor_data(sensor_type_t sensor, sensor_data_t *data) {
-    if (!manager.initialized || data == NULL) {
+esp_err_t sensor_manager_get_data(sensor_type_t sensor_type, sensor_data_t *data) {
+    if (!manager.initialized || !data) {
         return ESP_ERR_INVALID_ARG;
     }
-
-    if (xSemaphoreTake(manager.data_mutex, pdMS_TO_TICKS(100)) != pdTRUE) {
+    
+    if (pdTRUE != xSemaphoreTake(manager.data_mutex, pdMS_TO_TICKS(1000))) {
+        ESP_LOGE(TAG, "Failed to take data mutex");
         return ESP_ERR_TIMEOUT;
     }
-
-    switch (sensor) {
+    
+    esp_err_t ret = ESP_OK;
+    switch (sensor_type) {
         case SENSOR_TYPE_SHT31:
-            if (manager.status.sht31_found) {
+            if (!manager.status.sht31_found) {
+                ret = ESP_ERR_NOT_FOUND;
+            } else {
                 memcpy(data, &manager.sht31_data, sizeof(sensor_data_t));
-                xSemaphoreGive(manager.data_mutex);
-                return ESP_OK;
             }
             break;
-
+            
         case SENSOR_TYPE_BMP280:
-            if (manager.status.bmp280_found) {
+            if (!manager.status.bmp280_found) {
+                ret = ESP_ERR_NOT_FOUND;
+            } else {
                 memcpy(data, &manager.bmp280_data, sizeof(sensor_data_t));
-                xSemaphoreGive(manager.data_mutex);
-                return ESP_OK;
             }
             break;
-
+            
         default:
+            ret = ESP_ERR_INVALID_ARG;
             break;
     }
-
+    
     xSemaphoreGive(manager.data_mutex);
-    return ESP_ERR_NOT_FOUND;
+    return ret;
 }
 
 // Get latest data from all sensors
@@ -385,6 +407,7 @@ esp_err_t sensor_manager_stop_auto_read(void) {
     // Wait for task to finish
     if (manager.read_task_handle != NULL) {
         vTaskDelay(pdMS_TO_TICKS(manager.config.read_interval_ms + 100));
+        manager.read_task_handle = NULL;
     }
     
     ESP_LOGI(TAG, "Auto-read stopped");
@@ -425,45 +448,6 @@ void sensor_manager_print_status(void) {
     printf("Auto-read: %s\n", manager.config.auto_read_enabled ? "Enabled" : "Disabled");
     printf("===================================\n\n");
 }
-
-// Get sensor data
-esp_err_t sensor_manager_get_data(sensor_type_t sensor_type, sensor_data_t *data) {
-    if (!manager.initialized || !data) {
-        return ESP_ERR_INVALID_ARG;
-    }
-    
-    if (pdTRUE != xSemaphoreTake(manager.data_mutex, pdMS_TO_TICKS(1000))) {
-        ESP_LOGE(TAG, "Failed to take data mutex");
-        return ESP_ERR_TIMEOUT;
-    }
-    
-    esp_err_t ret = ESP_OK;
-    switch (sensor_type) {
-        case SENSOR_TYPE_SHT31:
-            if (!manager.status.sht31_found) {
-                ret = ESP_ERR_NOT_FOUND;
-            } else {
-                memcpy(data, &manager.sht31_data, sizeof(sensor_data_t));
-            }
-            break;
-            
-        case SENSOR_TYPE_BMP280:
-            if (!manager.status.bmp280_found) {
-                ret = ESP_ERR_NOT_FOUND;
-            } else {
-                memcpy(data, &manager.bmp280_data, sizeof(sensor_data_t));
-            }
-            break;
-            
-        default:
-            ret = ESP_ERR_INVALID_ARG;
-            break;
-    }
-    
-    xSemaphoreGive(manager.data_mutex);
-    return ret;
-}
-
 // Print sensor data
 void sensor_manager_print_data(void) {
     printf("\n========== Sensor Data ==========\n");
