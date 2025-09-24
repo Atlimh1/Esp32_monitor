@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp32-temp-monitor",
-    "project_version":    "3280633-dirty",
+    "project_version":    "a6780b7-dirty",
     "project_path":       "/home/atli/Documents/Esp32/Esp32_main",
     "idf_path":           "/home/atli/esp/esp-idf",
     "build_dir":          "/home/atli/Documents/Esp32/Esp32_main/build",
