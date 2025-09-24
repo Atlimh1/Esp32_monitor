@@ -1,0 +1,115 @@
+Command: ninja flash
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/atli/Documents/Esp32/Esp32_main/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- USING O3
+-- App "esp32-temp-monitor" version: 3280633-dirty
+-- Adding linker script /home/atli/Documents/Esp32/Esp32_main/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/atli/Documents/Esp32/Esp32_main/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/atli/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/atli/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/atli/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/atli/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/atli/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/atli/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/atli/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script /home/atli/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bmp280 bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_client http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc sensor_manager sht31 soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_manager wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/atli/esp/esp-idf/components/app_trace /home/atli/esp/esp-idf/components/app_update /home/atli/Documents/Esp32/Esp32_main/components/bmp280 /home/atli/esp/esp-idf/components/bootloader /home/atli/esp/esp-idf/components/bootloader_support /home/atli/esp/esp-idf/components/bt /home/atli/esp/esp-idf/components/cmock /home/atli/esp/esp-idf/components/console /home/atli/esp/esp-idf/components/cxx /home/atli/esp/esp-idf/components/driver /home/atli/esp/esp-idf/components/efuse /home/atli/esp/esp-idf/components/esp-tls /home/atli/esp/esp-idf/components/esp_adc /home/atli/esp/esp-idf/components/esp_app_format /home/atli/esp/esp-idf/components/esp_bootloader_format /home/atli/esp/esp-idf/components/esp_coex /home/atli/esp/esp-idf/components/esp_common /home/atli/esp/esp-idf/components/esp_driver_ana_cmpr /home/atli/esp/esp-idf/components/esp_driver_bitscrambler /home/atli/esp/esp-idf/components/esp_driver_cam /home/atli/esp/esp-idf/components/esp_driver_dac /home/atli/esp/esp-idf/components/esp_driver_gpio /home/atli/esp/esp-idf/components/esp_driver_gptimer /home/atli/esp/esp-idf/components/esp_driver_i2c /home/atli/esp/esp-idf/components/esp_driver_i2s /home/atli/esp/esp-idf/components/esp_driver_isp /home/atli/esp/esp-idf/components/esp_driver_jpeg /home/atli/esp/esp-idf/components/esp_driver_ledc /home/atli/esp/esp-idf/components/esp_driver_mcpwm /home/atli/esp/esp-idf/components/esp_driver_parlio /home/atli/esp/esp-idf/components/esp_driver_pcnt /home/atli/esp/esp-idf/components/esp_driver_ppa /home/atli/esp/esp-idf/components/esp_driver_rmt /home/atli/esp/esp-idf/components/esp_driver_sdio /home/atli/esp/esp-idf/components/esp_driver_sdm /home/atli/esp/esp-idf/components/esp_driver_sdmmc /home/atli/esp/esp-idf/components/esp_driver_sdspi /home/atli/esp/esp-idf/components/esp_driver_spi /home/atli/esp/esp-idf/components/esp_driver_touch_sens /home/atli/esp/esp-idf/components/esp_driver_tsens /home/atli/esp/esp-idf/components/esp_driver_twai /home/atli/esp/esp-idf/components/esp_driver_uart /home/atli/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/atli/esp/esp-idf/components/esp_eth /home/atli/esp/esp-idf/components/esp_event /home/atli/esp/esp-idf/components/esp_gdbstub /home/atli/esp/esp-idf/components/esp_hid /home/atli/esp/esp-idf/components/esp_http_client /home/atli/esp/esp-idf/components/esp_http_server /home/atli/esp/esp-idf/components/esp_https_ota /home/atli/esp/esp-idf/components/esp_https_server /home/atli/esp/esp-idf/components/esp_hw_support /home/atli/esp/esp-idf/components/esp_lcd /home/atli/esp/esp-idf/components/esp_local_ctrl /home/atli/esp/esp-idf/components/esp_mm /home/atli/esp/esp-idf/components/esp_netif /home/atli/esp/esp-idf/components/esp_netif_stack /home/atli/esp/esp-idf/components/esp_partition /home/atli/esp/esp-idf/components/esp_phy /home/atli/esp/esp-idf/components/esp_pm /home/atli/esp/esp-idf/components/esp_psram /home/atli/esp/esp-idf/components/esp_ringbuf /home/atli/esp/esp-idf/components/esp_rom /home/atli/esp/esp-idf/components/esp_security /home/atli/esp/esp-idf/components/esp_system /home/atli/esp/esp-idf/components/esp_timer /home/atli/esp/esp-idf/components/esp_vfs_console /home/atli/esp/esp-idf/components/esp_wifi /home/atli/esp/esp-idf/components/espcoredump /home/atli/esp/esp-idf/components/esptool_py /home/atli/esp/esp-idf/components/fatfs /home/atli/esp/esp-idf/components/freertos /home/atli/esp/esp-idf/components/hal /home/atli/esp/esp-idf/components/heap /home/atli/Documents/Esp32/Esp32_main/components/http_client /home/atli/esp/esp-idf/components/http_parser /home/atli/esp/esp-idf/components/idf_test /home/atli/esp/esp-idf/components/ieee802154 /home/atli/esp/esp-idf/components/json /home/atli/esp/esp-idf/components/log /home/atli/esp/esp-idf/components/lwip /home/atli/Documents/Esp32/Esp32_main/main /home/atli/esp/esp-idf/components/mbedtls /home/atli/esp/esp-idf/components/mqtt /home/atli/esp/esp-idf/components/newlib /home/atli/esp/esp-idf/components/nvs_flash /home/atli/esp/esp-idf/components/nvs_sec_provider /home/atli/esp/esp-idf/components/openthread /home/atli/esp/esp-idf/components/partition_table /home/atli/esp/esp-idf/components/perfmon /home/atli/esp/esp-idf/components/protobuf-c /home/atli/esp/esp-idf/components/protocomm /home/atli/esp/esp-idf/components/pthread /home/atli/esp/esp-idf/components/rt /home/atli/esp/esp-idf/components/sdmmc /home/atli/Documents/Esp32/Esp32_main/components/sensor_manager /home/atli/Documents/Esp32/Esp32_main/components/sht31 /home/atli/esp/esp-idf/components/soc /home/atli/esp/esp-idf/components/spi_flash /home/atli/esp/esp-idf/components/spiffs /home/atli/esp/esp-idf/components/tcp_transport /home/atli/esp/esp-idf/components/ulp /home/atli/esp/esp-idf/components/unity /home/atli/esp/esp-idf/components/usb /home/atli/esp/esp-idf/components/vfs /home/atli/esp/esp-idf/components/wear_levelling /home/atli/Documents/Esp32/Esp32_main/components/wifi_manager /home/atli/esp/esp-idf/components/wifi_provisioning /home/atli/esp/esp-idf/components/wpa_supplicant /home/atli/esp/esp-idf/components/xtensa
+-- Configuring done (4.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: /home/atli/Documents/Esp32/Esp32_main/build
+[1/16] Performing build step for 'bootloader'
+[1/1] cd /home/atli/Documents/Esp32/Esp32_main/build/bootloader/esp-idf/esptool_py && /home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/atli/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/atli/Documents/Esp32/Esp32_main/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/16] No install step for 'bootloader'
+[3/16] Completed 'bootloader'
+[4/16] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[5/16] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[6/16] Building C object esp-idf/sht31/CMakeFiles/__idf_sht31.dir/sht31.c.obj
+[7/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/atli/Documents/Esp32/Esp32_main/main/main.c:289:13: warning: 'http_send_task' defined but not used [-Wunused-function]
+  289 | static void http_send_task(void *pvParameters) {
+      |             ^~~~~~~~~~~~~~
+/home/atli/Documents/Esp32/Esp32_main/main/main.c:54:13: warning: 'i2c_scanner' defined but not used [-Wunused-function]
+   54 | static void i2c_scanner(void) {
+      |             ^~~~~~~~~~~
+[8/16] Linking C static library esp-idf/sht31/libsht31.a
+[9/16] Building C object esp-idf/sensor_manager/CMakeFiles/__idf_sensor_manager.dir/sensor_manager.c.obj
+[10/16] Linking C static library esp-idf/sensor_manager/libsensor_manager.a
+[11/16] Linking C static library esp-idf/main/libmain.a
+[12/16] Generating esp-idf/esp_system/ld/sections.ld
+[13/16] Linking CXX executable esp32-temp-monitor.elf
+[14/16] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/atli/Documents/Esp32/Esp32_main/build/esp32-temp-monitor.bin
+[15/16] cd /home/atli/Documents/Esp32/Esp32_main/build/esp-idf/esptool_py && /home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/atli/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/atli/Documents/Esp32/Esp32_main/build/partition_table/partition-table.bin /home/atli/Documents/Esp32/Esp32_main/build/esp32-temp-monitor.bin
+esp32-temp-monitor.bin binary size 0xc2ee0 bytes. Smallest app partition is 0x100000 bytes. 0x3d120 bytes (24%) free.
+[15/16] cd /home/atli/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/atli/esp/esp-idf -D "SERIAL_TOOL=/home/atli/.espressif/python_env/idf5.5_py3.12_env/bin/python;;/home/atli/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/atli/Documents/Esp32/Esp32_main/build -P /home/atli/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 esp32-temp-monitor.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.dev2
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 6c:c8:40:35:4e:c0
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d2fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16488...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075fc... (100 %)
+Wrote 26240 bytes (16488 compressed) at 0x00001000 in 1.6 seconds (effective 129.5 kbit/s)...
+Hash of data verified.
+Compressed 798432 bytes to 498577...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cbae... (6 %)
+Writing at 0x00025ad0... (9 %)
+Writing at 0x00030ace... (12 %)
+Writing at 0x0003628f... (16 %)
+Writing at 0x0003c2b9... (19 %)
+Writing at 0x00042096... (22 %)
+Writing at 0x000480a4... (25 %)
+Writing at 0x0004dbe5... (29 %)
+Writing at 0x00053db3... (32 %)
+Writing at 0x000593c0... (35 %)
+Writing at 0x0005ed82... (38 %)
+Writing at 0x00064946... (41 %)
+Writing at 0x0006a154... (45 %)
+Writing at 0x0006f82c... (48 %)
+Writing at 0x000752fa... (51 %)
+Writing at 0x0007b3c0... (54 %)
+Writing at 0x00080bc5... (58 %)
+Writing at 0x00086749... (61 %)
+Writing at 0x0008c4fc... (64 %)
+Writing at 0x00091d6d... (67 %)
+Writing at 0x00097b44... (70 %)
+Writing at 0x0009d528... (74 %)
+Writing at 0x000a2f68... (77 %)
+Writing at 0x000aa4ac... (80 %)
+Writing at 0x000b3a71... (83 %)
+Writing at 0x000b966a... (87 %)
+Writing at 0x000bf424... (90 %)
+Writing at 0x000c4edc... (93 %)
+Writing at 0x000cb0b8... (96 %)
+Writing at 0x000d03e4... (100 %)
+Wrote 798432 bytes (498577 compressed) at 0x00010000 in 43.9 seconds (effective 145.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 826.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

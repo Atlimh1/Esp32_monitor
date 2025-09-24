@@ -374,7 +374,7 @@ void app_main(void) {
     sensor_status_t sensor_status;
     sensor_manager_get_status(&sensor_status);
     if (sensor_status.total_sensors > 0) {
-        sensor_manager_start_auto_read();
+        //sensor_manager_start_auto_read();
         ESP_LOGI(TAG, "Found %d sensor(s), auto-read started", sensor_status.total_sensors);
     } else {
         ESP_LOGW(TAG, "No sensors found!");
@@ -398,7 +398,7 @@ void app_main(void) {
     }
     
     // Create HTTP send task
-    xTaskCreate(http_send_task, "http_send", 4096, NULL, 5, NULL);
+    //xTaskCreate(http_send_task, "http_send", 4096, NULL, 5, NULL);
     
 #if DEBUG_MODE
     // Create debug control task (interactive, no refresh)

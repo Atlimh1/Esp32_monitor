@@ -111,7 +111,7 @@ esp_err_t http_client_send_sensor_data(void) {
     esp_http_client_config_t config = {
         .url = client.full_url,
         .event_handler = http_event_handler,
-        .method = HTTP_METHOD_POST,
+        .method = HTTP_METHOD_GET,
         .timeout_ms = 5000,
         .buffer_size = 512,
     };
